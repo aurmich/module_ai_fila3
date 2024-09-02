@@ -106,7 +106,7 @@ class Completion extends Page implements HasForms
             // dddx($prompt);
             // $res = app(CompletionAction::class)->execute($prompt);
             // The quality of tools in the PHP ecosystem has greatly improved in recent years
-            $res = app(SentimentAction::class)->execute($prompt);
+            $res = app(SentimentAction::class)->execute((string) $prompt);
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
