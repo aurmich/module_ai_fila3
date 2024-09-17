@@ -5,18 +5,19 @@ declare(strict_types=1);
 namespace Modules\AI\Actions;
 
 use OpenAI\Laravel\Facades\OpenAI;
+use OpenAI\Responses\Completions\CreateResponse;
 use Spatie\QueueableAction\QueueableAction;
 
 class CompletionAction
 {
     use QueueableAction;
 
-    public function execute(string $prompt)
+    public function execute(string $prompt): CreateResponse
     {
         $result = OpenAI::completions()->create([
             // 'model' => 'text-davinci-003',
             'model' => 'gpt-3.5-turbo-instruct',
-            'prompt' => 'PHP is',
+            'prompt' => $prompt,
             'temperature' => 0.5,
             'max_tokens' => 100,
             'top_p' => 1.0,
@@ -25,9 +26,9 @@ class CompletionAction
         ]);
 
         // OpenAI\Responses\Completions\CreateResponse
-        dddx($result);
+        return $result;
         // string
-        // $result['choices'][0]['text'];
+        // return $result['choices'][0]['text'];
     }
 }
 
