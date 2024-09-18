@@ -13,12 +13,13 @@ use function Codewithkyrian\Transformers\Pipelines\pipeline;
 use Codewithkyrian\Transformers\Transformers;
 // 003 importing the pipeline function
 use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 class SentimentAction
 {
     use QueueableAction;
 
-    public function execute(string $prompt)
+    public function execute(string $prompt): array
     {
         // 004 initializing the Transformers class setting the cache directory for models
         Transformers::setup()->setCacheDir('./../cache/models')->apply();
@@ -26,8 +27,8 @@ class SentimentAction
         // 005 initializing a pipeline for sentiment-analysis
         $pipe = pipeline('sentiment-analysis');
         $prompt = 'The quality of tools in the PHP ecosystem has greatly improved in recent years';
-        $out = $pipe($prompt);
-        dddx($out);
+        Assert::isArray($out = $pipe($prompt));
+
         // array:2 [▼
         //    "label" => "POSITIVE"
         //    "score" => 0.99965798854828
