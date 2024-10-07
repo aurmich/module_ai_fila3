@@ -3,14 +3,17 @@
 namespace Modules\AI\Filament\Pages;
 
 use Filament\Forms;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Select;
-use Filament\Notifications\Notification;
-use Filament\Pages\Actions\Action;
 use Filament\Pages\Page;
+use Webmozart\Assert\Assert;
+use Filament\Pages\Actions\Action;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use Filament\Forms\Components\Select;
 use Illuminate\Support\Facades\Config;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use function Safe\file_get_contents;
 
 class FineTuning extends Page
 {
@@ -21,6 +24,8 @@ class FineTuning extends Page
     public int $batch_size = 32;
     public int $epochs = 10;
     public string $dataset = 'dataset1';
+    /** @var TemporaryUploadedFile */
+    public $dataset_file;
 
     /**
      * Schema del form
@@ -79,7 +84,7 @@ class FineTuning extends Page
             $data['dataset_file'] = $this->dataset_file->getRealPath(); // Percorso del file caricato
         }
 
-        $apiEndpoint = Config::get('ai.backend_api.fine_tuning_url');
+        Assert::string($apiEndpoint = Config::get('ai.backend_api.fine_tuning_url'));
 
         $response = $this->sendFineTuningRequest($data, $apiEndpoint);
 
@@ -101,7 +106,8 @@ class FineTuning extends Page
     protected function sendFineTuningRequest(array $data, string $endpoint): Response
     {
         //return Http::post($endpoint, $data);
-        return Http::attach('dataset_file', file_get_contents($data['dataset_file']), basename($data['dataset_file']))
+        Assert::string($content=file_get_contents($data['dataset_file']));
+        return Http::attach('dataset_file', $content, basename($data['dataset_file']))
         ->post($endpoint, $data);
     }
 
