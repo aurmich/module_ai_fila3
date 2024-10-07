@@ -110,15 +110,21 @@ class Completion extends Page implements HasForms
             $data = $this->completionForm->getState();
             $prompt = $data['prompt'];
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! is_string($prompt)) {
                 return;
             }
 =======
 >>>>>>> 700b104 (up)
+=======
+            if (! is_string($prompt)) {
+                return;
+            }
+>>>>>>> 30e3a64 (up)
             // dddx($prompt);
             // $res = app(CompletionAction::class)->execute($prompt);
             // The quality of tools in the PHP ecosystem has greatly improved in recent years
-            $res = app(SentimentAction::class)->execute((string) $prompt);
+            $res = app(SentimentAction::class)->execute($prompt);
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
