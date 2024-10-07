@@ -7,7 +7,6 @@ declare(strict_types=1);
 
 namespace Modules\AI\Actions;
 
-<<<<<<< HEAD
 use function Codewithkyrian\Transformers\Pipelines\pipeline;
 
 // 002 importing the Transformers class
@@ -15,15 +14,11 @@ use Codewithkyrian\Transformers\Transformers;
 // 003 importing the pipeline function
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-=======
-use Spatie\QueueableAction\QueueableAction;
->>>>>>> e6bfb4f (up)
 
 class SentimentAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     public function execute(string $prompt): array
     {
         // 004 initializing the Transformers class setting the cache directory for models
@@ -41,9 +36,5 @@ class SentimentAction
         // "time" => 20.914520025253
 
         return $out;
-=======
-    public function execute(string $prompt)
-    {
->>>>>>> e6bfb4f (up)
     }
 }
