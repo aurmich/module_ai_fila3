@@ -27,8 +27,13 @@ class SentimentAction
         // 005 initializing a pipeline for sentiment-analysis
         $pipe = pipeline('sentiment-analysis');
         $prompt = 'The quality of tools in the PHP ecosystem has greatly improved in recent years';
+<<<<<<< HEAD
         Assert::isArray($out = $pipe($prompt));
 
+=======
+        $out = $pipe($prompt);
+        dddx($out);
+>>>>>>> 700b104 (up)
         // array:2 [▼
         //    "label" => "POSITIVE"
         //    "score" => 0.99965798854828
