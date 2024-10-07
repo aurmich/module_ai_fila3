@@ -1,6 +1,9 @@
 https://cubettech.com/resources/blog/building-ai-powered-web-applications-with-laravel/
 https://laravel-news.com/openai-in-laravel
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e6bfb4f (up)
 https://blog.cubed.run/revolutionizing-web-development-the-power-of-ai-and-ml-in-laravel-75c087bacd40
 
 https://ahmadrosid.com/blog/how-to-use-claude-model-in-laravel  // !
@@ -14,6 +17,7 @@ https://huggingface.co/blog/how-to-train
 
 https://www.aimodels.fyi/
 
+<<<<<<< HEAD
 https://linuxwizardry.com/how-to-get-started-with-huggingface-and-ai-on-ubuntu/
 
 https://jewelhuq.medium.com/comprehensive-overview-of-leading-large-language-model-llm-providers-8e92c3a463e4
@@ -27,6 +31,8 @@ https://www.youtube.com/watch?v=jgz8lr32brY
 
 =======
 >>>>>>> 608c8b3 (up)
+=======
+>>>>>>> e6bfb4f (up)
 
 ~~~php
 use TensorFlow\Tensor;
