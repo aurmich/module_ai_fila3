@@ -18,6 +18,9 @@ https://huggingface.co/blog/how-to-train
 https://www.aimodels.fyi/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0c23762 (up)
 https://linuxwizardry.com/how-to-get-started-with-huggingface-and-ai-on-ubuntu/
 
 https://jewelhuq.medium.com/comprehensive-overview-of-leading-large-language-model-llm-providers-8e92c3a463e4
@@ -29,10 +32,13 @@ https://trreta.com/blog/integrating-ai-and-machine-learning-in-laravel
 https://www.youtube.com/watch?v=jgz8lr32brY
 ----- 
 
+<<<<<<< HEAD
 =======
 >>>>>>> 608c8b3 (up)
 =======
 >>>>>>> e6bfb4f (up)
+=======
+>>>>>>> 0c23762 (up)
 
 ~~~php
 use TensorFlow\Tensor;
