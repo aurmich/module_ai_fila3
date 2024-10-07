@@ -17,12 +17,9 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
-<<<<<<< HEAD
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
-=======
->>>>>>> 700b104 (up)
 
 /**
  * @property ComponentContainer $form
@@ -109,18 +106,9 @@ class Completion extends Page implements HasForms
         try {
             $data = $this->completionForm->getState();
             $prompt = $data['prompt'];
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (! is_string($prompt)) {
                 return;
             }
-=======
->>>>>>> 700b104 (up)
-=======
-            if (! is_string($prompt)) {
-                return;
-            }
->>>>>>> 30e3a64 (up)
             // dddx($prompt);
             // $res = app(CompletionAction::class)->execute($prompt);
             // The quality of tools in the PHP ecosystem has greatly improved in recent years
