@@ -1,5 +1,6 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments
+from transformers import AutoModelForCausalLM, AutoModel, AutoTokenizer, Trainer, TrainingArguments
 from flask import Flask, request, jsonify
+#import tensorflow as tf
 import json
 import pandas as pd
 import torch
@@ -18,9 +19,15 @@ def fine_tune_model(dataframe, learning_rate, batch_size, epochs):
     """
     # 1. Load the pre-trained model and tokenizer from Hugging Face
     #model_name = "codellama/CodeLlama-7B-Python"  # Replace with the exact model
-    model_name = "EleutherAI/gpt-j-6B"
+    #model_name = "EleutherAI/gpt-j-6B"
+    model_name = "gpt2"  # oppure "distilgpt2" o "EleutherAI/gpt-neo-125M"
+    #tokenizer = AutoTokenizer.from_pretrained(model_name, from_tf=True)
+    #model = AutoModelForCausalLM.from_pretrained(model_name, from_tf=True)
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(model_name)
+    #model = AutoModel.from_pretrained(model_name)
+
+    tokenizer.pad_token = tokenizer.eos_token
 
     # 2. Tokenize the dataset
     def tokenize_function(examples):

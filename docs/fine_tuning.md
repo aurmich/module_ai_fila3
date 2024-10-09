@@ -18,7 +18,7 @@ https://medium.com/aimonks/code-llama-quick-start-guide-and-prompt-engineering-e
 ~~~bash
 python3 -m venv venv
 source venv/bin/activate
-pip install flask pandas torch transformers
+pip install flask pandas torch transformers mlx-lm tensorflow
 ~~~
 
 Flask: Per creare l'API che riceve le richieste POST da Laravel.
