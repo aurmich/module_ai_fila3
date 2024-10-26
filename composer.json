@@ -29,6 +29,10 @@
         "openai-php/laravel": "^0.4.1",
         "thecodingmachine/safe": "^2.5"
     },
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d793e53 (📝 (composer.json): add PSR-4 autoload paths for AI module factories and seeders to improve code organization and maintainability)
     "require-dev_comment": {
         "laravel/pint": "^1.13",
         "nunomaduro/phpinsights": "^2.11",
