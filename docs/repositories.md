@@ -6,8 +6,11 @@ https://github.com/CodeWithKyrian/transformers-php // !
 https://packagist.org/packages/kambo/huggingface-php
 https://github.com/jackvial/duckbilledplatypusgo
 https://github.com/taishi-i/awesome-ChatGPT-repositories   // !
+<<<<<<< HEAD
 
 //----------------
+=======
+>>>>>>> 0c23762a (up)
 https://github.com/RubixML/ML
 
 
