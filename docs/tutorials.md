@@ -1,6 +1,5 @@
 https://cubettech.com/resources/blog/building-ai-powered-web-applications-with-laravel/
 https://laravel-news.com/openai-in-laravel
-<<<<<<< HEAD
 https://blog.cubed.run/revolutionizing-web-development-the-power-of-ai-and-ml-in-laravel-75c087bacd40
 
 https://ahmadrosid.com/blog/how-to-use-claude-model-in-laravel  // !
@@ -25,8 +24,6 @@ https://trreta.com/blog/integrating-ai-and-machine-learning-in-laravel
 https://www.youtube.com/watch?v=jgz8lr32brY
 ----- 
 
-=======
->>>>>>> 608c8b3 (up)
 
 
 ~~~php
