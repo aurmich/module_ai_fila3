@@ -37,16 +37,6 @@ class Completion extends Page implements HasForms
         $this->fillForms();
     }
 
-<<<<<<< HEAD
-=======
-    protected function getForms(): array
-    {
-        return [
-            'completionForm',
-        ];
-    }
-
->>>>>>> 07a34001 (up)
     public function completionForm(Form $form): Form
     {
         return $form
@@ -58,7 +48,6 @@ class Completion extends Page implements HasForms
             ->statePath('completionData');
     }
 
-<<<<<<< HEAD
     public function completion(): void
     {
         try {
@@ -82,8 +71,6 @@ class Completion extends Page implements HasForms
         ];
     }
 
-=======
->>>>>>> 07a34001 (up)
     protected function getCompletionFormActions(): array
     {
         return [

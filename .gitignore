@@ -37,10 +37,7 @@ package-lock.json
 .git-blame-ignore-revs
 node_modules
 node_modules
-<<<<<<< HEAD
 vendor
-=======
->>>>>>> 07a34001 (up)
 vendor/
 build/
 docs/cache/
