@@ -42,3 +42,4 @@ vendor/
 build/
 docs/cache/
 cache/
+bin/venv/
