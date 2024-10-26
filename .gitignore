@@ -40,8 +40,5 @@ node_modules
 vendor
 vendor/
 build/
-<<<<<<< HEAD
 docs/cache/
 cache/
-=======
->>>>>>> d9ec163b (up)
