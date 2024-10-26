@@ -24,10 +24,6 @@ https://trreta.com/blog/integrating-ai-and-machine-learning-in-laravel
 https://www.youtube.com/watch?v=jgz8lr32brY
 ----- 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7b76a891 (.)
 
 ~~~php
 use TensorFlow\Tensor;

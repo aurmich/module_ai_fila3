@@ -45,25 +45,6 @@ class Completion extends Page implements HasForms
             ->statePath('completionData');
     }
 
-<<<<<<< HEAD
-=======
-    public function completion(): void
-    {
-        try {
-            $data = $this->completionForm->getState();
-            $prompt = $data['prompt'];
-            // dddx($prompt);
-            // $res = app(CompletionAction::class)->execute($prompt);
-            // The quality of tools in the PHP ecosystem has greatly improved in recent years
-            $res = app(SentimentAction::class)->execute((string) $prompt);
-
-            // $this->handleRecordUpdate($this->getUser(), $data);
-        } catch (Halt $exception) {
-            return;
-        }
-    }
-
->>>>>>> 7b76a891 (.)
     protected function getForms(): array
     {
         return [
