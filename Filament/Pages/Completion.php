@@ -16,7 +16,10 @@ use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
+<<<<<<< HEAD
 use Modules\AI\Actions\SentimentAction;
+=======
+>>>>>>> fd7d1107 (up)
 
 /**
  * @property ComponentContainer $form
@@ -73,6 +76,20 @@ class Completion extends Page implements HasForms
 
     protected function getCompletionFormActions(): array
     {
+<<<<<<< HEAD
+=======
+        return $form
+            ->schema([
+                Forms\Components\Textarea::make('prompt')
+                    ->required(),
+            ])
+            ->model($this->getUser())
+            ->statePath('completionData');
+    }
+
+    protected function getCompletionFormActions(): array
+    {
+>>>>>>> fd7d1107 (up)
         return [
             Action::make('completionAction')
                 ->label(__('filament-panels::pages/auth/edit-profile.form.actions.save.label'))
@@ -96,5 +113,18 @@ class Completion extends Page implements HasForms
         $data = $this->getUser()->attributesToArray();
 
         $this->completionForm->fill($data);
+    }
+
+    public function completion(): void
+    {
+        try {
+            $data = $this->completionForm->getState();
+            $prompt = $data['prompt'];
+            $res = app(CompletionAction::class)->execute($prompt);
+
+            // $this->handleRecordUpdate($this->getUser(), $data);
+        } catch (Halt $exception) {
+            return;
+        }
     }
 }
