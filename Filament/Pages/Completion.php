@@ -4,7 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\AI\Filament\Pages;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+use Exception;
+>>>>>>> f0350c37 ( Here's the commit message based on the changes you provided:)
 use Filament\Actions\Action;
+=======
+>>>>>>> 608c8b3 (up)
 use Filament\Facades\Filament;
 use Filament\Forms;
 use Filament\Forms\ComponentContainer;
@@ -12,11 +19,16 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
+<<<<<<< HEAD
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
+=======
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> 608c8b3 (up)
 
 
 
@@ -33,13 +45,18 @@ class Completion extends Page implements HasForms
 
     protected static string $view = 'ai::filament.pages.completion';
 
+<<<<<<< HEAD
     public ?array $completionData = [];
+=======
+    public ?array $data = [];
+>>>>>>> 608c8b3 (up)
 
     public function mount(): void
     {
         $this->fillForms();
     }
 
+<<<<<<< HEAD
     public function completionForm(Form $form): Form
     {
         return $form
@@ -67,6 +84,8 @@ class Completion extends Page implements HasForms
         }
     }
 
+=======
+>>>>>>> 608c8b3 (up)
     protected function getForms(): array
     {
         return [
@@ -74,6 +93,7 @@ class Completion extends Page implements HasForms
         ];
     }
 
+<<<<<<< HEAD
     protected function getCompletionFormActions(): array
     {
         return [
@@ -81,6 +101,25 @@ class Completion extends Page implements HasForms
                 ->label(__('filament-panels::pages/auth/edit-profile.form.actions.save.label'))
                 ->submit('completionForm'),
         ];
+=======
+    public function completionForm(Form $form): Form
+    {
+        return $form
+            ->schema([
+                Forms\Components\Section::make('Profile Information')
+                    ->description('Update your account\'s profile information and email address.')
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required(),
+                        Forms\Components\TextInput::make('email')
+                            ->email()
+                            ->required()
+                            ->unique(ignoreRecord: true),
+                    ]),
+            ])
+            ->model($this->getUser())
+            ->statePath('profileData');
+>>>>>>> 608c8b3 (up)
     }
 
     protected function getUser(): Authenticatable&Model
@@ -88,7 +127,15 @@ class Completion extends Page implements HasForms
         $user = Filament::auth()->user();
 
         if (! $user instanceof Model) {
+<<<<<<< HEAD
             throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
+=======
+<<<<<<< HEAD
+            throw new Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
+=======
+            throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
+>>>>>>> 608c8b3 (up)
+>>>>>>> f0350c37 ( Here's the commit message based on the changes you provided:)
         }
 
         return $user;
