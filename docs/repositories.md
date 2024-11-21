@@ -19,3 +19,11 @@ https://github.com/taishi-i/awesome-ChatGPT-repositories   // !
 https://github.com/RubixML/ML
 
 
+//---------------
+
+https://packagist.org/packages/kambo/huggingface-php
+https://github.com/jackvial/duckbilledplatypusgo
+https://github.com/taishi-i/awesome-ChatGPT-repositories   // !
+https://github.com/RubixML/ML
+
+
