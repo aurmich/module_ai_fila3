@@ -38,7 +38,6 @@ package-lock.json
 .git-blame-ignore-revs
 node_modules
 node_modules
-vendor
 vendor/
 build/
 docs/cache/
