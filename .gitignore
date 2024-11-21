@@ -1,5 +1,6 @@
 /vendor/
 node_modules/
+venv/
 npm-debug.log
 yarn-error.log
 
@@ -41,3 +42,4 @@ vendor/
 build/
 docs/cache/
 cache/
+bin/venv/
