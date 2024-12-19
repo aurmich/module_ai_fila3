@@ -15,16 +15,12 @@ use Filament\Pages\Page;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-=======
 use Modules\AI\Actions\CompletionAction;
-<<<<<<< HEAD
->>>>>>> origin/dev
 use Modules\AI\Actions\SentimentAction;
-=======
->>>>>>> fd7d110 (up)
+use Webmozart\Assert\Assert;
 
 /**
+ * @property ComponentContainer $form
  * @property ComponentContainer $completionForm
  */
 class Completion extends Page implements HasForms
@@ -32,6 +28,7 @@ class Completion extends Page implements HasForms
     use InteractsWithForms;
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
+
     protected static string $view = 'ai::filament.pages.completion';
 
     public ?array $completionData = [];
@@ -52,29 +49,31 @@ class Completion extends Page implements HasForms
             ->statePath('completionData');
     }
 
+    public function completion(): void
+    {
+        try {
+            $data = $this->completionForm->getState();
+            Assert::string($prompt = $data['prompt']);
+            // dddx($prompt);
+            // $res = app(CompletionAction::class)->execute($prompt);
+            // The quality of tools in the PHP ecosystem has greatly improved in recent years
+            $res = app(SentimentAction::class)->execute($prompt);
+
+            // $this->handleRecordUpdate($this->getUser(), $data);
+        } catch (Halt $exception) {
+            return;
+        }
+    }
+
     protected function getForms(): array
     {
         return [
-            // 'completionForm' => $this->makeForm('completionForm'),
+            'completionForm',
         ];
     }
 
     protected function getCompletionFormActions(): array
     {
-<<<<<<< HEAD
-=======
-        return $form
-            ->schema([
-                Forms\Components\Textarea::make('prompt')
-                    ->required(),
-            ])
-            ->model($this->getUser())
-            ->statePath('completionData');
-    }
-
-    protected function getCompletionFormActions(): array
-    {
->>>>>>> fd7d110 (up)
         return [
             Action::make('completionAction')
                 ->label(__('filament-panels::pages/auth/edit-profile.form.actions.save.label'))
@@ -96,30 +95,7 @@ class Completion extends Page implements HasForms
     protected function fillForms(): void
     {
         $data = $this->getUser()->attributesToArray();
+
         $this->completionForm->fill($data);
-    }
-
-    public function completion(): void
-    {
-        try {
-            $data = $this->completionForm->getState();
-<<<<<<< HEAD
-            $prompt = $data['prompt'] ?? null;
-
-            if (! is_string($prompt)) {
-                return;
-            }
-
-            // Replace this with actual execution logic
-            $res = app(SentimentAction::class)->execute($prompt);
-=======
-            $prompt = $data['prompt'];
-            $res = app(CompletionAction::class)->execute($prompt);
-
-            // $this->handleRecordUpdate($this->getUser(), $data);
->>>>>>> origin/dev
-        } catch (Halt $exception) {
-            return;
-        }
     }
 }
