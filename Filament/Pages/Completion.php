@@ -48,7 +48,7 @@ class Completion extends Page implements HasForms
     protected function getForms(): array
     {
         return [
-            'completionForm' => $this->makeForm('completionForm'),
+            // 'completionForm' => $this->makeForm('completionForm'),
         ];
     }
 
