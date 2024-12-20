@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 namespace Modules\AI\Actions;
 
+// @phpstan-ignore function.notFound
 use function Codewithkyrian\Transformers\Pipelines\pipeline;
 
 // 002 importing the Transformers class

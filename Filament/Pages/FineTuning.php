@@ -1,19 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\AI\Filament\Pages;
 
 use Filament\Forms;
-use Filament\Pages\Page;
-use Webmozart\Assert\Assert;
-use Filament\Pages\Actions\Action;
-use Illuminate\Http\Client\Response;
-use Illuminate\Support\Facades\Http;
 use Filament\Forms\Components\Select;
-use Illuminate\Support\Facades\Config;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Filament\Pages\Actions\Action;
+use Filament\Pages\Page;
+use Illuminate\Http\Client\Response;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Http;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+
 use function Safe\file_get_contents;
+
+use Webmozart\Assert\Assert;
 
 class FineTuning extends Page
 {
@@ -28,7 +32,7 @@ class FineTuning extends Page
     public $dataset_file;
 
     /**
-     * Schema del form
+     * Schema del form.
      */
     protected function getFormSchema(): array
     {
@@ -69,7 +73,7 @@ class FineTuning extends Page
     }
 
     /**
-     * Avvia il processo di fine-tuning
+     * Avvia il processo di fine-tuning.
      */
     public function startFineTuning(): void
     {
@@ -105,14 +109,15 @@ class FineTuning extends Page
 
     protected function sendFineTuningRequest(array $data, string $endpoint): Response
     {
-        //return Http::post($endpoint, $data);
-        Assert::string($content=file_get_contents($data['dataset_file']));
-        return Http::attach('dataset_file', $content, basename($data['dataset_file']))
+        Assert::string($dataset_file = $data['dataset_file']);
+        Assert::string($content = file_get_contents($dataset_file));
+
+        return Http::attach('dataset_file', $content, basename($dataset_file))
         ->post($endpoint, $data);
     }
 
     /**
-     * Restituisce le azioni del form, come il pulsante per avviare il fine-tuning
+     * Restituisce le azioni del form, come il pulsante per avviare il fine-tuning.
      */
     protected function getFormActions(): array
     {
