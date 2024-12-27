@@ -9,7 +9,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 
 class AIServiceProvider extends XotBaseServiceProvider
 {
-    public string $module_name = 'ai'; // lower del nome
+    public string $module_name = 'Ai'; // lower del nome
 
     protected string $module_dir = __DIR__;
 
