@@ -7,13 +7,13 @@
         <title>Module AI</title>
 
        {{-- Laravel Vite - CSS File --}}
-       {{-- {{ module_vite('build-ai', 'Resources/assets/sass/app.scss') }} --}}
+       {{-- {{ module_vite('build-ai', 'resources/assets/sass/app.scss') }} --}}
 
     </head>
     <body>
         @yield('content')
 
         {{-- Laravel Vite - JS File --}}
-        {{-- {{ module_vite('build-ai', 'Resources/assets/js/app.js') }} --}}
+        {{-- {{ module_vite('build-ai', 'resources/assets/js/app.js') }} --}}
     </body>
 </html>
