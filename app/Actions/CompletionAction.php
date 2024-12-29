@@ -12,6 +12,12 @@ class CompletionAction
 {
     use QueueableAction;
 
+    /**
+     * Execute the completion action.
+     *
+     * @param string $prompt
+     * @return CreateResponse
+     */
     public function execute(string $prompt): CreateResponse
     {
         $result = OpenAI::completions()->create([

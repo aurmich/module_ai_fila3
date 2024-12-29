@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\AI\Filament\Pages;
 
-use Filament\Pages\Page;
+use Modules\Xot\Filament\Pages\XotBasePage;
 
-class Dashboard extends Page
+class Dashboard extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
