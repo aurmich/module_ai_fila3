@@ -7,6 +7,7 @@ namespace Modules\AI\Actions;
 use Modules\AI\Contracts\SentimentAnalyzer;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use function Safe\error_log;
 
 class BasicSentimentAnalyzer implements SentimentAnalyzer
 {
