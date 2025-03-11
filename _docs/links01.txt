@@ -1,11 +1,41 @@
-https://github.com/JoggApp/laravel-google-translate
+REPO
+------------------------------------------------------
+https://github.com/maltekuhr/laravel-gpt
+star: 72
+up: 4 months ago
+-------------------------------------------------------
+https://github.com/openai-php/laravel
+star: 2400
+up: last month
 
-https://github.com/tanmuhittin/laravel-google-translate
+tutorials:
+https://benjamincrozat.com/openai-api-php
+-------------------------------------------------------
+https://github.com/jonaspoelmans/laravel-gpt
+star: 1
+up: 2 months ago
+-------------------------------------------------------
 
-//--------------
-https://github.com/Stichoza/google-translate-php   1700 stars
-https://medium.com/@mwaqasiu/translating-text-in-laravel-made-easy-with-translatetexthelper-and-google-translate-library-214c7c76d655#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjZjZTExYWVjZjllYjE0MDI0YTQ0YmJmZDFiY2Y4YjMyYTEyMjg3ZmEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTU5MDIwMjQzMjQ3MDkwMzIyMDkiLCJlbWFpbCI6Im1hcmNvLnNvdHRhbmFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTcxMzg2NzM3NCwibmFtZSI6Ik1hcmNvIFNvdHRhbmEiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUYxbWNZSmp0S0lfazl5TUlfMFlTVlprMmxlWTdJMlBwV3ljNk1MR0I5N2h2MHA1dzI9czk2LWMiLCJnaXZlbl9uYW1lIjoiTWFyY28iLCJmYW1pbHlfbmFtZSI6IlNvdHRhbmEiLCJpYXQiOjE3MTM4Njc2NzQsImV4cCI6MTcxMzg3MTI3NCwianRpIjoiN2UyMDUwMzRkOGI4M2EyY2UwNTIxMDk4NzNlNGExZGVkY2UzM2ZjNiJ9.BtohJ20fBpglGUpSbml1uMai4RoNtyHeHTDR60vqOzDFpS7uIy_rTNpMo-ksdHvSo60a7MCXuaTRKNA1JLtSLSxvtXBetozC6puVbczuvYqzkWkgkGpdLaQjEz08cFEb0KeZxcv_e9W--HjmTgFZROUA-OSV22rhp5t0w-QaByEcpAXhP-u2wiYVCvCb5-2rXaW8z30c3t9dXmJD51opX6TGTVEfdkkM42Ye5JbYNA3Op1dGZDfEVRHqT_97_0DDqRz480eP8EqfB1k42mzjTHQnC0N0szFfeW7W4IToaHlim8gB_3TfarBWe6LSyBsjUJZ4VD_T4JM8J8L55jZK-A
-
-//----------------
 
 
+pacchetto per filament
+https://github.com/icetalker/filament-chatgpt-bot
+
+
+
+tutorial
+https://medium.com/@adityajani1/how-to-integrate-chatgpt-api-with-laravel-projects-with-example-c1f4d04a0cf5
+https://www.linkedin.com/pulse/how-integrate-chatgpt-laravel-10-avya-technology/
+https://www.itsolutionstuff.com/post/how-to-use-chat-gpt-in-laravelexample.html#google_vignette
+
+
+
+https://ahmadrosid.com/blog/laravel-openai-streaming-response   CON SSE
+
+video
+https://www.youtube.com/watch?v=n8o4cN7wEmw
+
+
+------------- sembra bello -----------
+https://beyondco.de/blog/query-your-laravel-database-using-natural-language
+https://laravel-news.com/generate-code-in-laravel-with-synth

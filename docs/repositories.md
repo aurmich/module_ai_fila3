@@ -1,31 +1,29 @@
-<<<<<<< HEAD
+//---------------------------
+https://arter.dev/introducing-dream-an-ai-ml-toolbox-for-laravel
+https://github.com/christopherarter/dream
+https://github.com/peterfox/openai-laravel-demo
+https://github.com/CodeWithKyrian/transformers-php // !
+https://packagist.org/packages/kambo/huggingface-php
+https://github.com/jackvial/duckbilledplatypusgo
+https://github.com/taishi-i/awesome-ChatGPT-repositories   // !
 
-Tracker gathers a lot of information from your requests to identify and store:
-- Sessions
-- Page Views (hits on routes)
-- Users (logged users)
-- Devices (computer, smartphone, tablet...)
-- Languages (preference, language range)
-- User Devices (by, yeah, storing a cookie on each device)
-- Browsers (Chrome, Mozilla Firefox, Safari, Internet Explorer...)
-- Operating Systems (iOS, Mac OS, Linux, Windows...)
-- Geo Location Data (Latitute, Longitude, Country and City)
-- Routes and all its parameters
-- Events
-- Referers (url, medium, source, search term...)
-- Exceptions/Errors
-- Sql queries and all its bindings
-- Url queries and all its arguments
-- Database connections
-
-https://github.com/antonioribeiro/tracker
-
----
-=======
-https://github.com/visualbuilder/email-templates
-
-https://github.com/codedor/filament-mail-templates/
+//----------------
+https://github.com/RubixML/ML
 
 
-https://www.mailcoach.app/resources/blog/using-the-mailcoach-markdown-editor-in-filament
->>>>>>> 946fdba366 (Squashed 'laravel/Modules/Notify/' content from commit 6aac1e028)
+//---------------
+
+https://packagist.org/packages/kambo/huggingface-php
+https://github.com/jackvial/duckbilledplatypusgo
+https://github.com/taishi-i/awesome-ChatGPT-repositories   // !
+https://github.com/RubixML/ML
+
+
+//---------------
+
+https://packagist.org/packages/kambo/huggingface-php
+https://github.com/jackvial/duckbilledplatypusgo
+https://github.com/taishi-i/awesome-ChatGPT-repositories   // !
+https://github.com/RubixML/ML
+
+
