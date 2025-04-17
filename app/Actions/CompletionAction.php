@@ -14,9 +14,6 @@ class CompletionAction
 
     /**
      * Execute the completion action.
-     *
-     * @param string $prompt
-     * @return CreateResponse
      */
     public function execute(string $prompt): CreateResponse
     {

@@ -14,20 +14,24 @@ use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
-
-use Webmozart\Assert\Assert;
 
 class FineTuning extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-cog';
+
     protected static string $view = 'ai::filament.pages.fine-tuning';
 
     public string $learning_rate = '0.001';
+
     public int $batch_size = 32;
+
     public int $epochs = 10;
+
     public string $dataset = 'dataset1';
+
     /** @var TemporaryUploadedFile */
     public $dataset_file;
 
@@ -113,7 +117,7 @@ class FineTuning extends Page
         Assert::string($content = file_get_contents($dataset_file));
 
         return Http::attach('dataset_file', $content, basename($dataset_file))
-        ->post($endpoint, $data);
+            ->post($endpoint, $data);
     }
 
     /**

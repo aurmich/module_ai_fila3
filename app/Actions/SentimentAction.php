@@ -7,6 +7,7 @@ namespace Modules\AI\Actions;
 use Modules\AI\Contracts\SentimentAnalyzer;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+
 use function Safe\error_log;
 
 class BasicSentimentAnalyzer implements SentimentAnalyzer
@@ -21,14 +22,14 @@ class BasicSentimentAnalyzer implements SentimentAnalyzer
         $negativeCount = 0;
 
         foreach ($positiveWords as $word) {
-            if (false !== stripos($text, $word)) {
-                ++$positiveCount;
+            if (stripos($text, $word) !== false) {
+                $positiveCount++;
             }
         }
 
         foreach ($negativeWords as $word) {
-            if (false !== stripos($text, $word)) {
-                ++$negativeCount;
+            if (stripos($text, $word) !== false) {
+                $negativeCount++;
             }
         }
 
@@ -67,8 +68,8 @@ class SentimentAction
     public function __construct()
     {
         $this->analyzer = class_exists('Codewithkyrian\Transformers\Transformers')
-            ? new TransformersSentimentAnalyzer()
-            : new BasicSentimentAnalyzer();
+            ? new TransformersSentimentAnalyzer
+            : new BasicSentimentAnalyzer;
     }
 
     public function execute(string $prompt): array
@@ -99,27 +100,32 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
 
             /**
              * @var class-string<\Codewithkyrian\Transformers\Transformers> $transformersClass
-             * @var \Codewithkyrian\Transformers\Transformers|null $transformers
+             * La variabile $transformers viene dichiarata più sotto e tipizzata correttamente.
              */
             $transformersClass = 'Codewithkyrian\Transformers\Transformers';
-            if (!method_exists($transformersClass, 'setup')) {
+            if (! method_exists($transformersClass, 'setup')) {
                 throw new \Exception('Transformers setup method not found');
             }
 
+            /** @var object|null $transformers */
             $transformers = $transformersClass::setup();
-            if (! $transformers) {
+            if (!is_object($transformers)) {
                 throw new \Exception('Failed to initialize Transformers');
             }
+            if (!method_exists($transformers, 'setCacheDir')) {
+                throw new \Exception('setCacheDir method not found on Transformers');
+            }
+            $transformers->setCacheDir($this->cacheDir);
+            if (method_exists($transformers, 'apply')) {
+                $transformers->apply();
+            }
 
-            $transformers->setCacheDir($this->cacheDir)->apply();
-
-            if (! function_exists('Codewithkyrian\Transformers\Pipelines\pipeline')) {
+            if (!function_exists('Codewithkyrian\\Transformers\\Pipelines\\pipeline')) {
                 throw new \Exception('Pipeline function not found');
             }
 
-            /** @var callable $pipe */
             $pipe = \Codewithkyrian\Transformers\Pipelines\pipeline('sentiment-analysis');
-            if (! is_callable($pipe)) {
+            if (!is_callable($pipe)) {
                 throw new \Exception('Failed to create sentiment analysis pipeline');
             }
 
