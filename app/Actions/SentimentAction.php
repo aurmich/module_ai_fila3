@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\AI\Actions;
 
 use Modules\AI\Contracts\SentimentAnalyzer;
+use Modules\AI\Datas\SentimentData;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -82,19 +83,20 @@ class SentimentAction
      * Execute sentiment analysis on a text prompt.
      *
      * @param string $prompt The text to analyze
-     * @return array<string, mixed> Analysis result with label, score or error information
+     * @return \Modules\AI\Datas\SentimentData
      */
-    public function execute(string $prompt): array
+    public function execute(string $prompt): SentimentData
     {
         try {
-            return $this->analyzer->analyze($prompt);
+            $result = $this->analyzer->analyze($prompt);
+            return SentimentData::from($result);
         } catch (\Exception $e) {
             error_log('Sentiment analysis error: '.$e->getMessage());
 
-            return [
+            return SentimentData::from([
                 'error' => $e->getMessage(),
                 'status' => 'error',
-            ];
+            ]);
         }
     }
 }
