@@ -12,6 +12,12 @@ use function Safe\error_log;
 
 class BasicSentimentAnalyzer implements SentimentAnalyzer
 {
+    /**
+     * @inheritDoc
+     *
+     * @param string $text
+     * @return array<string,mixed>
+     */
     public function analyze(string $text): array
     {
         // Basic sentiment analysis using simple text patterns
@@ -72,6 +78,12 @@ class SentimentAction
             : new BasicSentimentAnalyzer;
     }
 
+    /**
+     * Execute sentiment analysis on a text prompt.
+     *
+     * @param string $prompt The text to analyze
+     * @return array<string, mixed> Analysis result with label, score or error information
+     */
     public function execute(string $prompt): array
     {
         try {
@@ -91,6 +103,12 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
 {
     private string $cacheDir = './../cache/models';
 
+    /**
+     * @inheritDoc
+     *
+     * @param string $text
+     * @return array<string,mixed>
+     */
     public function analyze(string $text): array
     {
         try {
