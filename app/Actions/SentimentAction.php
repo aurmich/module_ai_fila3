@@ -5,14 +5,7 @@ declare(strict_types=1);
 namespace Modules\AI\Actions;
 
 use Modules\AI\Contracts\SentimentAnalyzer;
-<<<<<<< HEAD
 use Modules\AI\Datas\SentimentData;
-=======
-<<<<<<< HEAD
-=======
-use Modules\AI\Datas\SentimentData;
->>>>>>> origin/dev
->>>>>>> c7c37b5 (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -20,21 +13,12 @@ use function Safe\error_log;
 
 class BasicSentimentAnalyzer implements SentimentAnalyzer
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> c7c37b5 (.)
     /**
      * @inheritDoc
      *
      * @param string $text
      * @return array<string,mixed>
      */
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> c7c37b5 (.)
     public function analyze(string $text): array
     {
         // Basic sentiment analysis using simple text patterns
@@ -95,22 +79,6 @@ class SentimentAction
             : new BasicSentimentAnalyzer;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public function execute(string $prompt): array
-    {
-        try {
-            return $this->analyzer->analyze($prompt);
-        } catch (\Exception $e) {
-            error_log('Sentiment analysis error: '.$e->getMessage());
-
-            return [
-                'error' => $e->getMessage(),
-                'status' => 'error',
-            ];
-=======
->>>>>>> c7c37b5 (.)
     /**
      * Execute sentiment analysis on a text prompt.
      *
@@ -129,10 +97,6 @@ class SentimentAction
                 'error' => $e->getMessage(),
                 'status' => 'error',
             ]);
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> c7c37b5 (.)
         }
     }
 }
@@ -141,21 +105,12 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
 {
     private string $cacheDir = './../cache/models';
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> c7c37b5 (.)
     /**
      * @inheritDoc
      *
      * @param string $text
      * @return array<string,mixed>
      */
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> c7c37b5 (.)
     public function analyze(string $text): array
     {
         try {
@@ -165,40 +120,13 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
 
             /**
              * @var class-string<\Codewithkyrian\Transformers\Transformers> $transformersClass
-<<<<<<< HEAD
              * La variabile $transformers viene dichiarata più sotto e tipizzata correttamente.
-=======
-<<<<<<< HEAD
-             * @var \Codewithkyrian\Transformers\Transformers|null $transformers
-=======
-             * La variabile $transformers viene dichiarata più sotto e tipizzata correttamente.
->>>>>>> origin/dev
->>>>>>> c7c37b5 (.)
              */
             $transformersClass = 'Codewithkyrian\Transformers\Transformers';
             if (! method_exists($transformersClass, 'setup')) {
                 throw new \Exception('Transformers setup method not found');
             }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            $transformers = $transformersClass::setup();
-            if (! $transformers) {
-                throw new \Exception('Failed to initialize Transformers');
-            }
-
-            $transformers->setCacheDir($this->cacheDir)->apply();
-
-            if (! function_exists('Codewithkyrian\Transformers\Pipelines\pipeline')) {
-                throw new \Exception('Pipeline function not found');
-            }
-
-            /** @var callable $pipe */
-            $pipe = \Codewithkyrian\Transformers\Pipelines\pipeline('sentiment-analysis');
-            if (! is_callable($pipe)) {
-=======
->>>>>>> c7c37b5 (.)
             /** @var object|null $transformers */
             $transformers = $transformersClass::setup();
             if (!is_object($transformers)) {
@@ -218,10 +146,6 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
 
             $pipe = \Codewithkyrian\Transformers\Pipelines\pipeline('sentiment-analysis');
             if (!is_callable($pipe)) {
-<<<<<<< HEAD
-=======
->>>>>>> origin/dev
->>>>>>> c7c37b5 (.)
                 throw new \Exception('Failed to create sentiment analysis pipeline');
             }
 
