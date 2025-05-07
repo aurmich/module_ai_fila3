@@ -43,3 +43,6 @@ build/
 docs/cache/
 cache/
 bin/venv/
+-e 
+# PHPStan documentation
+docs/phpstan/
