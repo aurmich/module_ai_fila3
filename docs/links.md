@@ -45,3 +45,7 @@
 - Hugging Face Forums
 - Machine Learning Stack Exchange
 - AI Research Papers
+
+---
+
+> 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)

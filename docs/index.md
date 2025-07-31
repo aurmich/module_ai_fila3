@@ -15,4 +15,10 @@ Questa sezione raccoglie la documentazione relativa al modulo AI.
 
 ---
 
+> ℹ️ **Per l'installazione e la gestione centralizzata degli MCP servers, consulta la guida [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md).**
+
 [Torna all'indice principale](../../../docs/index.md)
+
+---
+
+> 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
