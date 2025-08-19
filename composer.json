@@ -26,21 +26,13 @@
         }
     },
     "require": {
-<<<<<<< HEAD
-        "openai-php/laravel": "^0.10.1"
-=======
         "openai-php/laravel": "*"
->>>>>>> 0c58df0 (.)
     },
     "require-dev_comment": {
         "codewithkyrian/transformers": "^0.5.2",
         "laravel/pint": "^1.13",
         "nunomaduro/phpinsights": "^2.11",
-<<<<<<< HEAD
-        "larastan/larastan": "^2.7",
-=======
         "larastan/larastan": "*",
->>>>>>> 0c58df0 (.)
         "vimeo/psalm": "^5.17",
         "psalm/plugin-laravel": "^2.8",
         "enlightn/enlightn": "^2.7",
