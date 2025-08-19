@@ -11,12 +11,16 @@ use Filament\Forms\ComponentContainer;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
+=======
+>>>>>>> ca0cef7 (.)
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
+use Modules\Xot\Filament\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
 
 /**
