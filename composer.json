@@ -32,7 +32,11 @@
         "codewithkyrian/transformers": "^0.5.2",
         "laravel/pint": "^1.13",
         "nunomaduro/phpinsights": "^2.11",
+<<<<<<< HEAD
         "larastan/larastan": "*",
+=======
+        "larastan/larastan": "^2.7",
+>>>>>>> c657866 (.)
         "vimeo/psalm": "^5.17",
         "psalm/plugin-laravel": "^2.8",
         "enlightn/enlightn": "^2.7",

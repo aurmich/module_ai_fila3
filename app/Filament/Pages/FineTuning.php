@@ -9,7 +9,11 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Actions\Action;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
+=======
+use Filament\Pages\Page;
+>>>>>>> c657866 (.)
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
@@ -18,7 +22,11 @@ use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
+<<<<<<< HEAD
 class FineTuning extends XotBasePage
+=======
+class FineTuning extends Page
+>>>>>>> c657866 (.)
 {
     protected static ?string $navigationIcon = 'heroicon-o-cog';
 

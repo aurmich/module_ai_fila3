@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo AI - Integrazione MCP
 
 ## Panoramica
@@ -58,3 +59,30 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 > ℹ️ **Per l'installazione e la gestione centralizzata degli MCP servers, consulta la guida [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md).**
 
 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
+=======
+# 🤖 AI Module - Integrazione MCP
+
+## 📋 Quick Reference
+| Categoria | Guida | File |
+|-----------|-------| ---- |
+| **Setup** | MCP Server Setup | [mcp/01_installazione.md](mcp/01_installazione.md) |
+| **Config** | Configurazione | [mcp/02_configurazione.md](mcp/02_configurazione.md) |
+| **Usage** | Utilizzo pratico | [mcp/03_utilizzo.md](mcp/03_utilizzo.md) |
+| **Integration** | Chat System | [chat.md](chat.md) |
+| **Training** | Fine Tuning | [fine_tuning.md](fine_tuning.md) |
+| **Tools** | Ollama, CLI Tools | [ollama.md](ollama.md), [tools.md](tools.md) |
+| **Troubleshooting** | Errori comuni | [mcp/06_troubleshooting.md](mcp/06_troubleshooting.md) |
+
+## 🎯 Core Features
+- **MCP Protocol**: Database integration, external services, custom tools
+- **AI Chat**: Multi-user interface, context management, memory persistence
+- **Model Training**: Fine tuning, data preparation, deployment
+
+## 📁 Documentation Structure
+- `/mcp/` - Documentazione completa MCP (00-11)
+- `/tutorials/` - Tutorial pratici Laravel+MCP
+- `/phpstan/` - Configurazioni PHPStan
+
+---
+*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+>>>>>>> c657866 (.)
