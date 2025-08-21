@@ -13,21 +13,28 @@ use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
 =======
 >>>>>>> ca0cef7 (.)
 =======
 use Filament\Pages\Page;
 >>>>>>> c657866 (.)
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> 2019a7e (.)
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
 =======
 >>>>>>> c657866 (.)
+=======
+>>>>>>> 2019a7e (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -35,11 +42,15 @@ use Webmozart\Assert\Assert;
  * @property ComponentContainer $completionForm
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2019a7e (.)
 class Completion extends XotBasePage implements HasForms
 {
     use InteractsWithForms;
 
     //protected static ?string $navigationIcon = 'heroicon-o-document-text';
+<<<<<<< HEAD
 =======
 class Completion extends Page implements HasForms
 {
@@ -47,6 +58,8 @@ class Completion extends Page implements HasForms
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 >>>>>>> c657866 (.)
+=======
+>>>>>>> 2019a7e (.)
 
     protected static string $view = 'ai::filament.pages.completion';
 

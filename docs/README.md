@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2019a7e (.)
 # Modulo AI - Integrazione MCP
 
 ## Panoramica
@@ -59,6 +62,7 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 > ℹ️ **Per l'installazione e la gestione centralizzata degli MCP servers, consulta la guida [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md).**
 
 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
+<<<<<<< HEAD
 =======
 # 🤖 AI Module - Integrazione MCP
 
@@ -86,3 +90,5 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
 >>>>>>> c657866 (.)
+=======
+>>>>>>> 2019a7e (.)
