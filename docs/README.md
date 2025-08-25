@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2019a7e (.)
+=======
+>>>>>>> e7a042c (.)
 # Modulo AI - Integrazione MCP
 
 ## Panoramica
@@ -63,6 +66,9 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7a042c (.)
 =======
 # 🤖 AI Module - Integrazione MCP
 
@@ -90,5 +96,8 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
 >>>>>>> c657866 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 2019a7e (.)
+=======
+>>>>>>> e7a042c (.)
