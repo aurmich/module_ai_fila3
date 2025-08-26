@@ -11,6 +11,7 @@ use Filament\Notifications\Notification;
 use Filament\Pages\Actions\Action;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
 =======
 use Filament\Pages\Page;
@@ -18,6 +19,9 @@ use Filament\Pages\Page;
 =======
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 2019a7e (.)
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> ccf901318 (.)
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
@@ -28,6 +32,7 @@ use function Safe\file_get_contents;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class FineTuning extends XotBasePage
 =======
 class FineTuning extends Page
@@ -35,6 +40,9 @@ class FineTuning extends Page
 =======
 class FineTuning extends XotBasePage
 >>>>>>> 2019a7e (.)
+=======
+class FineTuning extends XotBasePage
+>>>>>>> ccf901318 (.)
 {
     protected static ?string $navigationIcon = 'heroicon-o-cog';
 

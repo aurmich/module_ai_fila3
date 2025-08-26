@@ -15,6 +15,7 @@ use Filament\Forms\Form;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
 =======
 >>>>>>> ca0cef7 (.)
@@ -26,6 +27,9 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 2019a7e (.)
 =======
 >>>>>>> e7a042c (.)
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> ccf901318 (.)
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -46,6 +50,7 @@ use Webmozart\Assert\Assert;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2019a7e (.)
 class Completion extends XotBasePage implements HasForms
@@ -57,6 +62,9 @@ class Completion extends XotBasePage implements HasForms
 <<<<<<< HEAD
 =======
 class Completion extends Page implements HasForms
+=======
+class Completion extends XotBasePage implements HasForms
+>>>>>>> ccf901318 (.)
 {
     use InteractsWithForms;
 

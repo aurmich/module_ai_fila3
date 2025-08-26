@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2019a7e (.)
 =======
 >>>>>>> e7a042c (.)
+=======
+>>>>>>> ccf901318 (.)
 # Modulo AI - Integrazione MCP
 
 ## Panoramica
@@ -67,9 +70,12 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e7a042c (.)
 =======
+=======
+>>>>>>> ccf901318 (.)
 # 🤖 AI Module - Integrazione MCP
 
 ## 📋 Quick Reference
@@ -95,9 +101,13 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+<<<<<<< HEAD
 >>>>>>> c657866 (.)
 <<<<<<< HEAD
 =======
 >>>>>>> 2019a7e (.)
 =======
 >>>>>>> e7a042c (.)
+=======
+
+>>>>>>> ccf901318 (.)
