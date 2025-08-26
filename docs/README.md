@@ -3,18 +3,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9185144 (.)
 =======
 >>>>>>> 2019a7e (.)
 =======
 >>>>>>> e7a042c (.)
-<<<<<<< HEAD
 =======
 >>>>>>> ccf901318 (.)
-=======
->>>>>>> 9185144 (.)
 # Modulo AI - Integrazione MCP
 =======
 # 🤖 AI Module - Integrazione MCP
@@ -107,11 +101,6 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> e7a042c (.)
->>>>>>> 9185144 (.)
 =======
 >>>>>>> e7a042c (.)
 =======
@@ -149,7 +138,6 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 >>>>>>> 2019a7e (.)
 =======
 >>>>>>> e7a042c (.)
-<<<<<<< HEAD
 =======
 
 >>>>>>> ccf901318 (.)
@@ -159,5 +147,3 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 *Ultimo aggiornamento: Maggio 2025*
 >>>>>>> 96b93fe (.)
-=======
->>>>>>> 9185144 (.)
