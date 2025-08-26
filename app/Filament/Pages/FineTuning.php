@@ -9,52 +9,17 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Actions\Action;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\Xot\Filament\Pages\XotBasePage;
-=======
-use Filament\Pages\Page;
->>>>>>> c657866 (.)
-=======
-use Modules\Xot\Filament\Pages\XotBasePage;
->>>>>>> 2019a7e (.)
-=======
-use Modules\Xot\Filament\Pages\XotBasePage;
->>>>>>> ccf901318 (.)
-use Illuminate\Http\Client\Response;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Http;
-=======
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
->>>>>>> 96b93fe (.)
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 class FineTuning extends XotBasePage
-=======
-class FineTuning extends Page
->>>>>>> c657866 (.)
-=======
-class FineTuning extends XotBasePage
->>>>>>> 2019a7e (.)
-=======
-class FineTuning extends XotBasePage
->>>>>>> ccf901318 (.)
-=======
-class FineTuning extends XotBasePage
->>>>>>> 96b93fe (.)
 {
     protected static ?string $navigationIcon = 'heroicon-o-cog';
 

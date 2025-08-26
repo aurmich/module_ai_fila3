@@ -321,7 +321,3 @@ class CompletionActionTest extends TestCase
         parent::tearDown();
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 96b93fe (.)
