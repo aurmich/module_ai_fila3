@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2019a7e (.)
-=======
->>>>>>> e7a042c (.)
-=======
->>>>>>> ccf901318 (.)
 # Modulo AI - Integrazione MCP
-=======
 # 🤖 AI Module - Integrazione MCP
 
 ## 📋 Quick Reference
@@ -87,25 +75,13 @@ Queste implementazioni open source possono essere utilizzate come riferimento:
 Se desideri contribuire a questa documentazione o all'implementazione del modulo AI, segui le linee guida del progetto e assicurati che il codice sia conforme agli standard di PHPStan livello 9.
 
 ---
-<<<<<<< HEAD
 
 *Ultimo aggiornamento: Maggio 2025*
-=======
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
->>>>>>> 96b93fe (.)
 
 > ℹ️ **Per l'installazione e la gestione centralizzata degli MCP servers, consulta la guida [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md).**
 
 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e7a042c (.)
-=======
-=======
->>>>>>> ccf901318 (.)
 # 🤖 AI Module - Integrazione MCP
 
 ## 📋 Quick Reference
@@ -131,19 +107,3 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
-<<<<<<< HEAD
->>>>>>> c657866 (.)
-<<<<<<< HEAD
-=======
->>>>>>> 2019a7e (.)
-=======
->>>>>>> e7a042c (.)
-=======
-
->>>>>>> ccf901318 (.)
-=======
-
----
-
-*Ultimo aggiornamento: Maggio 2025*
->>>>>>> 96b93fe (.)
