@@ -191,4 +191,4 @@ return [
 
 - [Panoramica MCP](./MCP_OVERVIEW.md)
 - [Implementazioni MCP](./MCP_IMPLEMENTAZIONI.md)
-- [Tutorial di Implementazione](../../../docs/tutorials/MCP_IMPLEMENTATION.md)
+- [Tutorial di Implementazione](../../../project_docs/tutorials/MCP_IMPLEMENTATION.md)
