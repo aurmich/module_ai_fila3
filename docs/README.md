@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2019a7e (.)
 =======
@@ -11,6 +12,9 @@
 >>>>>>> ccf901318 (.)
 # Modulo AI - Integrazione MCP
 =======
+=======
+# Modulo AI - Integrazione MCP
+>>>>>>> 9178766 (.)
 # 🤖 AI Module - Integrazione MCP
 
 ## 📋 Quick Reference
@@ -88,15 +92,22 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 *Ultimo aggiornamento: Maggio 2025*
 =======
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
 >>>>>>> 96b93fe (.)
+=======
+
+*Ultimo aggiornamento: Maggio 2025*
+*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+>>>>>>> 9178766 (.)
 
 > ℹ️ **Per l'installazione e la gestione centralizzata degli MCP servers, consulta la guida [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md).**
 
 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,6 +117,8 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 =======
 =======
 >>>>>>> ccf901318 (.)
+=======
+>>>>>>> 9178766 (.)
 # 🤖 AI Module - Integrazione MCP
 
 ## 📋 Quick Reference
@@ -132,6 +145,7 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 ---
 *Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c657866 (.)
 <<<<<<< HEAD
 =======
@@ -147,3 +161,5 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 *Ultimo aggiornamento: Maggio 2025*
 >>>>>>> 96b93fe (.)
+=======
+>>>>>>> 9178766 (.)
