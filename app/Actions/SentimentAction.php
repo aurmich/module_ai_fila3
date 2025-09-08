@@ -14,9 +14,8 @@ use function Safe\error_log;
 class BasicSentimentAnalyzer implements SentimentAnalyzer
 {
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      *
-     * @param string $text
      * @return array<string,mixed>
      */
     public function analyze(string $text): array
@@ -82,13 +81,13 @@ class SentimentAction
     /**
      * Execute sentiment analysis on a text prompt.
      *
-     * @param string $prompt The text to analyze
-     * @return \Modules\AI\Datas\SentimentData
+     * @param  string  $prompt  The text to analyze
      */
     public function execute(string $prompt): SentimentData
     {
         try {
             $result = $this->analyzer->analyze($prompt);
+
             return SentimentData::from($result);
         } catch (\Exception $e) {
             error_log('Sentiment analysis error: '.$e->getMessage());
@@ -106,9 +105,8 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
     private string $cacheDir = './../cache/models';
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      *
-     * @param string $text
      * @return array<string,mixed>
      */
     public function analyze(string $text): array
@@ -120,7 +118,7 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
 
             /**
              * @var class-string<\Codewithkyrian\Transformers\Transformers> $transformersClass
-             * La variabile $transformers viene dichiarata più sotto e tipizzata correttamente.
+             *                                                              La variabile $transformers viene dichiarata più sotto e tipizzata correttamente.
              */
             $transformersClass = 'Codewithkyrian\Transformers\Transformers';
             if (! method_exists($transformersClass, 'setup')) {
@@ -129,10 +127,10 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
 
             /** @var object|null $transformers */
             $transformers = $transformersClass::setup();
-            if (!is_object($transformers)) {
+            if (! is_object($transformers)) {
                 throw new \Exception('Failed to initialize Transformers');
             }
-            if (!method_exists($transformers, 'setCacheDir')) {
+            if (! method_exists($transformers, 'setCacheDir')) {
                 throw new \Exception('setCacheDir method not found on Transformers');
             }
             $transformers->setCacheDir($this->cacheDir);
@@ -140,19 +138,22 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
                 $transformers->apply();
             }
 
-            if (!function_exists('Codewithkyrian\\Transformers\\Pipelines\\pipeline')) {
+            if (! function_exists('Codewithkyrian\\Transformers\\Pipelines\\pipeline')) {
                 throw new \Exception('Pipeline function not found');
             }
 
             $pipe = \Codewithkyrian\Transformers\Pipelines\pipeline('sentiment-analysis');
-            if (!is_callable($pipe)) {
+            if (! is_callable($pipe)) {
                 throw new \Exception('Failed to create sentiment analysis pipeline');
             }
 
             $result = $pipe($text);
             Assert::isArray($result);
 
-            return $result;
+            /** @var array<string, mixed> $analysisResult */
+            $analysisResult = $result;
+
+            return $analysisResult;
         } catch (\Exception $e) {
             error_log('Transformers sentiment analysis failed: '.$e->getMessage());
 

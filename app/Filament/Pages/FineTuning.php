@@ -9,12 +9,11 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Actions\Action;
-use Modules\Xot\Filament\Pages\XotBasePage;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Modules\Xot\Filament\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
@@ -37,43 +36,59 @@ class FineTuning extends XotBasePage
     public $dataset_file;
 
     /**
+     * Safe translation helper that returns string.
+     */
+    private function safeTranslate(string $key): string
+    {
+        $translation = __($key);
+        if (is_string($translation)) {
+            return $translation;
+        }
+        if (is_array($translation) && count($translation) > 0) {
+            return (string) reset($translation);
+        }
+
+        return $key;
+    }
+
+    /**
      * Schema del form.
      */
     protected function getFormSchema(): array
     {
         return [
             TextInput::make('learning_rate')
-                ->label(__('ai::fine_tuning.learning_rate'))  // Usiamo la traduzione per il label
+                ->label('Learning Rate')
                 ->required()
                 ->numeric()
                 ->minValue(0)
-                ->helperText(__('ai::fine_tuning.learning_rate_helper')),
+                ->helperText('Set the learning rate for fine-tuning'),
 
             TextInput::make('batch_size')
-                ->label(__('ai::fine_tuning.batch_size'))  // Traduzione per batch size
+                ->label('Batch Size')
                 ->required()
                 ->numeric()
                 ->minValue(1)
-                ->helperText(__('ai::fine_tuning.batch_size_helper')),
+                ->helperText('Number of samples per batch'),
 
             TextInput::make('epochs')
-                ->label(__('ai::fine_tuning.epochs'))  // Traduzione per epochs
+                ->label('Epochs')
                 ->required()
                 ->numeric()
                 ->minValue(1)
-                ->helperText(__('ai::fine_tuning.epochs_helper')),
+                ->helperText('Number of training epochs'),
 
             Select::make('dataset')
-                ->label(__('ai::fine_tuning.dataset'))  // Traduzione per dataset
+                ->label('Dataset')
                 ->options([
-                    'dataset1' => __('ai::fine_tuning.dataset1'),
-                    'dataset2' => __('ai::fine_tuning.dataset2'),
+                    'dataset1' => 'Dataset 1',
+                    'dataset2' => 'Dataset 2',
                 ])
                 ->required(),
             Forms\Components\FileUpload::make('dataset_file')
-                ->label(__('ai::fine_tuning.dataset_file'))
+                ->label('Dataset File')
                 ->required()
-                ->helperText(__('ai::fine_tuning.dataset_file_helper')),
+                ->helperText('Upload the dataset file for training'),
         ];
     }
 
@@ -99,14 +114,14 @@ class FineTuning extends XotBasePage
 
         if ($response->successful()) {
             Notification::make()
-                ->title(__('ai::fine_tuning.success_title'))  // Traduzione per il titolo di successo
-                ->body(__('ai::fine_tuning.success_body'))    // Traduzione per il messaggio di successo
+                ->title('Success')
+                ->body('Fine-tuning started successfully')
                 ->success()
                 ->send();
         } else {
             Notification::make()
-                ->title(__('ai::fine_tuning.error_title'))  // Traduzione per il titolo di errore
-                ->body(__('ai::fine_tuning.error_body'))    // Traduzione per il messaggio di errore
+                ->title('Error')
+                ->body('Fine-tuning failed to start')
                 ->danger()
                 ->send();
         }
@@ -128,7 +143,7 @@ class FineTuning extends XotBasePage
     {
         return [
             Action::make('submit')
-                ->label(__('ai::fine_tuning.action_label'))
+                ->label('Start Fine-tuning')
                 ->action('startFineTuning')
                 ->color('primary'),
         ];

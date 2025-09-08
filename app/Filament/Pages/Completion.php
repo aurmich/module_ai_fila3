@@ -11,12 +11,12 @@ use Filament\Forms\ComponentContainer;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
-use Modules\Xot\Filament\Pages\XotBasePage;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
+use Modules\Xot\Filament\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
 
 /**
@@ -35,7 +35,7 @@ class Completion extends XotBasePage implements HasForms
 
     public function mount(): void
     {
-        $this->fillForms();
+        $this->completionForm->fill();
     }
 
     public function completionForm(Form $form): Form
@@ -55,7 +55,7 @@ class Completion extends XotBasePage implements HasForms
             $data = $this->completionForm->getState();
             Assert::string($prompt = $data['prompt']);
 
-            $action = new CompletionAction();
+            $action = new CompletionAction;
             $result = $action->execute($prompt);
 
             $this->dispatch('completion-completed', result: $result);
@@ -70,7 +70,7 @@ class Completion extends XotBasePage implements HasForms
             $data = $this->completionForm->getState();
             Assert::string($prompt = $data['prompt']);
 
-            $action = new SentimentAction();
+            $action = new SentimentAction;
             $result = $action->execute($prompt);
 
             $this->dispatch('sentiment-completed', result: $result);
@@ -83,7 +83,7 @@ class Completion extends XotBasePage implements HasForms
     {
         $user = Filament::auth()->user();
 
-        if (null === $user) {
+        if ($user === null) {
             throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
 
