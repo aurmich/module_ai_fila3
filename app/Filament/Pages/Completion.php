@@ -13,6 +13,7 @@ use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
 =======
 >>>>>>> 5409c9c (.)
@@ -21,6 +22,8 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+>>>>>>> 168177a (.)
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -28,6 +31,7 @@ use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 5409c9c (.)
@@ -36,15 +40,19 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 =======
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> 168177a (.)
 use Webmozart\Assert\Assert;
+
 
 /**
  * @property ComponentContainer $form
  * @property ComponentContainer $completionForm
  */
-class Completion extends XotBasePage implements HasForms
+class Completion extends XotBasePage 
 {
-    use InteractsWithForms;
+    
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
@@ -80,6 +88,7 @@ class Completion extends XotBasePage implements HasForms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $action = new CompletionAction();
 =======
             $action = new CompletionAction;
@@ -90,6 +99,8 @@ class Completion extends XotBasePage implements HasForms
             $action = new CompletionAction();
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+>>>>>>> 168177a (.)
             $result = $action->execute($prompt);
 
             $this->dispatch('completion-completed', result: $result);
@@ -106,6 +117,7 @@ class Completion extends XotBasePage implements HasForms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $action = new SentimentAction();
 =======
             $action = new SentimentAction;
@@ -116,6 +128,8 @@ class Completion extends XotBasePage implements HasForms
             $action = new SentimentAction();
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+>>>>>>> 168177a (.)
             $result = $action->execute($prompt);
 
             $this->dispatch('sentiment-completed', result: $result);
@@ -130,6 +144,7 @@ class Completion extends XotBasePage implements HasForms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $user) {
 =======
         if ($user === null) {
@@ -142,6 +157,8 @@ class Completion extends XotBasePage implements HasForms
 >>>>>>> db419c8 (.)
             throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
+=======
+>>>>>>> 168177a (.)
 
         if (! $user instanceof Model) {
             throw new \RuntimeException('L\'utente autenticato deve essere un modello Eloquent per permettere aggiornamenti.');

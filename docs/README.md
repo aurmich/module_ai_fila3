@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo AI - Integrazione MCP
 =======
 >>>>>>> 5409c9c (.)
@@ -20,6 +21,8 @@
 =======
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+>>>>>>> 168177a (.)
 # 🤖 AI Module - Integrazione MCP
 
 ## 📋 Quick Reference
@@ -44,6 +47,7 @@
 - `/phpstan/` - Configurazioni PHPStan
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 96b93fe (.)
 =======
 >>>>>>> 5409c9c (.)
@@ -52,6 +56,8 @@
 >>>>>>> 96b93fe (.)
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+>>>>>>> 168177a (.)
 
 ## Panoramica
 
@@ -118,20 +124,11 @@ Queste implementazioni open source possono essere utilizzate come riferimento:
 Se desideri contribuire a questa documentazione o all'implementazione del modulo AI, segui le linee guida del progetto e assicurati che il codice sia conforme agli standard di PHPStan livello 9.
 
 ---
-<<<<<<< HEAD
-
-*Ultimo aggiornamento: Maggio 2025*
-<<<<<<< HEAD
-*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
-=======
-=======
-*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
->>>>>>> 96b93fe (.)
->>>>>>> 4819637 (.)
 
 > ℹ️ **Per l'installazione e la gestione centralizzata degli MCP servers, consulta la guida [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md).**
 
 🔗 **Guida installazione MCP servers:** [INSTALLAZIONE_MCP_SERVERS.md](./INSTALLAZIONE_MCP_SERVERS.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -186,10 +183,16 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 >>>>>>> ccf901318 (.)
 =======
+=======
+>>>>>>> 168177a (.)
 
 ---
 
 *Ultimo aggiornamento: Maggio 2025*
+<<<<<<< HEAD
 >>>>>>> 96b93fe (.)
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+*Principio DRY: Una funzionalità = Una documentazione. Collegamenti logici e struttura pulita.*
+>>>>>>> 168177a (.)

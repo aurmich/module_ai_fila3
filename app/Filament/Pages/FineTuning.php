@@ -11,6 +11,7 @@ use Filament\Notifications\Notification;
 use Filament\Pages\Actions\Action;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Config;
@@ -23,6 +24,8 @@ use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 4819637 (.)
 >>>>>>> db419c8 (.)
+=======
+>>>>>>> 168177a (.)
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
