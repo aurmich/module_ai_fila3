@@ -11,12 +11,19 @@ use Filament\Forms\ComponentContainer;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
+=======
+>>>>>>> 5409c9c (.)
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> 5409c9c (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -35,7 +42,11 @@ class Completion extends XotBasePage implements HasForms
 
     public function mount(): void
     {
+<<<<<<< HEAD
         $this->fillForms();
+=======
+        $this->completionForm->fill();
+>>>>>>> 5409c9c (.)
     }
 
     public function completionForm(Form $form): Form
@@ -55,7 +66,11 @@ class Completion extends XotBasePage implements HasForms
             $data = $this->completionForm->getState();
             Assert::string($prompt = $data['prompt']);
 
+<<<<<<< HEAD
             $action = new CompletionAction();
+=======
+            $action = new CompletionAction;
+>>>>>>> 5409c9c (.)
             $result = $action->execute($prompt);
 
             $this->dispatch('completion-completed', result: $result);
@@ -70,7 +85,11 @@ class Completion extends XotBasePage implements HasForms
             $data = $this->completionForm->getState();
             Assert::string($prompt = $data['prompt']);
 
+<<<<<<< HEAD
             $action = new SentimentAction();
+=======
+            $action = new SentimentAction;
+>>>>>>> 5409c9c (.)
             $result = $action->execute($prompt);
 
             $this->dispatch('sentiment-completed', result: $result);
@@ -83,7 +102,11 @@ class Completion extends XotBasePage implements HasForms
     {
         $user = Filament::auth()->user();
 
+<<<<<<< HEAD
         if (null === $user) {
+=======
+        if ($user === null) {
+>>>>>>> 5409c9c (.)
             throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
 

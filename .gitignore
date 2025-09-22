@@ -46,3 +46,12 @@ bin/venv/
 -e 
 # PHPStan documentation
 docs/phpstan/
+<<<<<<< HEAD
+=======
+
+# Backup files
+*.old
+*.old1
+*.backup
+*.backup.*
+>>>>>>> 5409c9c (.)

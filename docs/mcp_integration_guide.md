@@ -201,24 +201,40 @@ php artisan mcp:serve
 ### Pacchetti MCP per Laravel
 
 1. **InnoGE/laravel-mcp**
+<<<<<<< HEAD
    - [GitHub](../../../docs/references/innoge_laravel_mcp.md)
+=======
+   - [GitHub](../../../project_docs/references/innoge_laravel_mcp.md)
+>>>>>>> 5409c9c (.)
    - Implementazione leggera di MCP per Laravel
    - Supporta sia STDIO che HTTP/WebSocket
 
 2. **OPGG/laravel-mcp-server**
+<<<<<<< HEAD
    - [GitHub](../../../docs/references/opgg_laravel_mcp_server.md)
+=======
+   - [GitHub](../../../project_docs/references/opgg_laravel_mcp_server.md)
+>>>>>>> 5409c9c (.)
    - Implementazione robusta con supporto SSE
    - Include generatori di strumenti e documentazione estesa
 
 ### Framework AI Compatibili
 
 1. **NeuronAI**
+<<<<<<< HEAD
    - [Documentazione](../../../docs/references/neuron_ai_docs.md)
+=======
+   - [Documentazione](../../../project_docs/references/neuron_ai_docs.md)
+>>>>>>> 5409c9c (.)
    - Framework PHP per lo sviluppo di agenti AI
    - Supporta integrazione con server MCP
 
 2. **Laravel AI Translator**
+<<<<<<< HEAD
    - [GitHub](../../../docs/references/laravel_ai_translator.md)
+=======
+   - [GitHub](../../../project_docs/references/laravel_ai_translator.md)
+>>>>>>> 5409c9c (.)
    - Pacchetto per traduzione automatica utilizzando LLM
    - Può essere integrato con MCP
 
@@ -296,9 +312,15 @@ php artisan mcp:serve
 
 ### Documentazione
 
+<<<<<<< HEAD
 - [Documentazione Ufficiale MCP](../../../docs/references/mcp_documentation.md)
 - [Laravel MCP SDK](../../../docs/references/laravel_mcp_sdk.md)
 - [Neuron AI Documentation](../../../docs/references/neuron_ai_docs.md)
+=======
+- [Documentazione Ufficiale MCP](../../../project_docs/references/mcp_documentation.md)
+- [Laravel MCP SDK](../../../project_docs/references/laravel_mcp_sdk.md)
+- [Neuron AI Documentation](../../../project_docs/references/neuron_ai_docs.md)
+>>>>>>> 5409c9c (.)
 
 ### Tutorial e Guide
 
@@ -308,9 +330,15 @@ php artisan mcp:serve
 
 ### Comunità e Supporto
 
+<<<<<<< HEAD
 - [Forum Laravel MCP](../../../docs/references/laravel_mcp_forum.md)
 - [Neuron AI Community](../../../docs/references/neuron_ai_community.md)
 - [Laravel Discord](../../../docs/references/laravel_discord.md)
+=======
+- [Forum Laravel MCP](../../../project_docs/references/laravel_mcp_forum.md)
+- [Neuron AI Community](../../../project_docs/references/neuron_ai_community.md)
+- [Laravel Discord](../../../project_docs/references/laravel_discord.md)
+>>>>>>> 5409c9c (.)
 
 ---
 
