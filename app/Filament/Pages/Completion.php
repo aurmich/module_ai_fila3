@@ -12,18 +12,30 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\XotBasePage;
 =======
 >>>>>>> 5409c9c (.)
+=======
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> 4819637 (.)
+>>>>>>> db419c8 (.)
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\AI\Actions\CompletionAction;
 use Modules\AI\Actions\SentimentAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 5409c9c (.)
+=======
+use Modules\Xot\Filament\Pages\XotBasePage;
+=======
+>>>>>>> 4819637 (.)
+>>>>>>> db419c8 (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -67,10 +79,17 @@ class Completion extends XotBasePage implements HasForms
             Assert::string($prompt = $data['prompt']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $action = new CompletionAction();
 =======
             $action = new CompletionAction;
 >>>>>>> 5409c9c (.)
+=======
+            $action = new CompletionAction;
+=======
+            $action = new CompletionAction();
+>>>>>>> 4819637 (.)
+>>>>>>> db419c8 (.)
             $result = $action->execute($prompt);
 
             $this->dispatch('completion-completed', result: $result);
@@ -86,10 +105,17 @@ class Completion extends XotBasePage implements HasForms
             Assert::string($prompt = $data['prompt']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $action = new SentimentAction();
 =======
             $action = new SentimentAction;
 >>>>>>> 5409c9c (.)
+=======
+            $action = new SentimentAction;
+=======
+            $action = new SentimentAction();
+>>>>>>> 4819637 (.)
+>>>>>>> db419c8 (.)
             $result = $action->execute($prompt);
 
             $this->dispatch('sentiment-completed', result: $result);
@@ -103,10 +129,17 @@ class Completion extends XotBasePage implements HasForms
         $user = Filament::auth()->user();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $user) {
 =======
         if ($user === null) {
 >>>>>>> 5409c9c (.)
+=======
+        if ($user === null) {
+=======
+        if (null === $user) {
+>>>>>>> 4819637 (.)
+>>>>>>> db419c8 (.)
             throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
 
